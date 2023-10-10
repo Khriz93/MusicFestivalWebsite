@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+body {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    background-image: url('assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 1950px 1280px;
+    overflow: hidden;
+    height: 1000px;
+    width: 100%;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-family: 'Rock Salt', cursive, sans-serif;
+    margin-left: 20px;
+    margin-right: 250px;
+    font-size: 30px;
+}
+
+.nav-menu {
+    margin-top: 5px;
+}
+
+.nav-menu a {
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 18px 34px;
+}
+
+.nav-menu a:hover {
+    color: #00FFD1;
+    font-size: 28px;
+}
