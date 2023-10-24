@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    background-image: url("/assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg");
+    background-image: linear-gradient(to bottom, transparent, #111111), url("/assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,7 @@ body {
     color: blue;
 }
 
-.title {
+.elektrik-eel {
     width: 360px;
     height: 170px;
     font-family: 'Bangers', serif;
@@ -128,4 +128,16 @@ body {
     font-weight: bold;
     text-align: center;
     margin: auto;
+}
+
+.shows-title {
+    color: #00FFD1;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.title-underline {
+    width: 20px;
+    height: 20px;
+    color: red;
 }
