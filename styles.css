@@ -141,3 +141,14 @@ body {
     height: 20px;
     color: red;
 }
+
+.brisbane-img, .sydney-img, .melbourne-img {
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    margin: 40px 30px;
+}
+
+.a:hover {
+    cursor: pointer;
+}
