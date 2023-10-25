@@ -188,3 +188,56 @@ body {
     width: 100%;
     height: 820px;
 }
+
+.artist-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist-row-1, .artist-row-2 {
+    width: 169px;
+    height: 190px;
+}
+
+.artist-row-1 {
+    margin: 50px auto 0;
+}
+
+.artist-row-2 {
+    margin: 0 auto;
+}
+
+.artist-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.image-text-parent
+{
+    position:relative
+}
+
+.image-text-container
+{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.image-text
+{
+    color: #FFE500;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 25px;
+}
+
+.image-text:hover
+{
+    transform: scale(3,3) rotate(40deg);
+    transition: all 0.5s ease-out;
+}

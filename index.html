@@ -49,13 +49,21 @@
     <!-- Shows Page -->
     <div class="shows">
         <div class="page-title">
+            <!-- Using a h2 tag here didn't work with the font family 'Bangers' and made the font look weird.
+                 So I used a p tag instead -->
             <p>SHOWS</p>
         </div>
         <div class="title-underline"></div>
         <!-- Show Locations -->
         <div class="show-locations">
             <div class="brisbane">
-                <img class="brisbane-img" src="assets/crowds/antoine-j-A_0C42zmz1Q-unsplash.jpg">
+                <div class="image-text-parent">
+                    <img class="brisbane-img" src="assets/crowds/antoine-j-A_0C42zmz1Q-unsplash.jpg">
+                    <div class="image-text-container">
+                        <p class="image-text">Thing</p>
+                    </div>
+                </div>
+                
                 <div class="shows-text">
                     <p>Dec 19th</p>
                     <p>Fortitude Valley</p>
@@ -86,6 +94,20 @@
             <p>ARTISTS</p>
         </div>
         <div class="title-underline"></div>
+        <div class="artist-info">
+            <div class="artist-row-1">
+                <img class="artist-img" src="/assets/artists/richie-hawtin-press-photo.png">
+            </div>
+            <div class="artist-row-1">
+                <img class="artist-img" src="/assets/artists/richie-hawtin-press-photo.png">
+            </div>
+            <div class="artist-row-2">
+                <img class="artist-img" src="/assets/artists/richie-hawtin-press-photo.png">
+            </div>
+            <div class="artist-row-2">
+                <img class="artist-img" src="/assets/artists/richie-hawtin-press-photo.png">
+            </div>
+        </div>
     </div>
 </body>
 </html>
