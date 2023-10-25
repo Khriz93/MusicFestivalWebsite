@@ -61,7 +61,7 @@ body {
 
 .limited-time, .tickets-available, .only {
     width: 335px;
-    font-family: 'Bangers', serif;
+    font-family: 'Bangers', sans-serif;
     color: #FFE500;
     font-weight: 400;
     -webkit-text-stroke: 1px black;
@@ -91,7 +91,7 @@ body {
     background-color: inherit;
     width: 335px;
     height: 42px;
-    font-family: 'Bangers', serif;
+    font-family: 'Bangers', sans-serif;
     border: none;
     color: #00FFD1;
     font-weight: 400;
@@ -110,7 +110,7 @@ body {
 .elektrik-eel {
     width: 360px;
     height: 170px;
-    font-family: 'Bangers', serif;
+    font-family: 'Bangers', sans-serif;
     color: #00FFD1;
     -webkit-text-stroke: 1px black;
     font-size: 82px;
@@ -132,7 +132,8 @@ body {
 
 .shows {
     width: 100%;
-    height: 720px;
+    height: 750px;
+    margin-bottom: 50px;
 }
 
 .page-title {
@@ -141,10 +142,10 @@ body {
     color: #00FFD1;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
     font-size: 65px;
-    font-family: 'Bangers', serif;
+    font-family: 'Bangers', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: 50px 0 20px 30px;
+    margin: 31px 0 20px 30px;
 }
  
 .title-underline {
@@ -160,17 +161,35 @@ body {
     flex-wrap: wrap;
 }
 
-.brisbane, .sydney, .melbourne {
+.image-text-container {
     width: 205px;
-    height: 215px;
+    height: 220px;
     margin: 55px auto;
+    position: relative;
 }
 
-.brisbane-img, .sydney-img, .melbourne-img {
+.shows-img {
     width: 160px;
     height: 145px;
+    object-fit: cover;
     border-radius: 20px;
-    margin: 0 35px 18px 30px;
+    margin: 30px 35px 18px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #FF7A00;
+    text-align: center;
+    z-index: 2; /* Ensures text is always on top */
+}
+
+.overlay-text p {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Bangers', sans-serif;
 }
 
 .shows-text {
@@ -181,7 +200,7 @@ body {
     font-weight: 700;
     text-align: center;
     font-size: 22px;
-    padding-top: 18px;
+    padding-top: 10px; /* Allow some padding between the bottom of the overlay-text and the top of this text */
 }
 
 .artists {
@@ -195,49 +214,30 @@ body {
     flex-wrap: wrap;
 }
 
-.artist-row-1, .artist-row-2 {
-    width: 169px;
-    height: 190px;
-}
-
-.artist-row-1 {
-    margin: 50px auto 0;
-}
-
-.artist-row-2 {
-    margin: 0 auto;
-}
-
 .artist-img {
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border-radius: 20px;
+    margin: 30px 35px 18px;
 }
 
-.image-text-parent
-{
-    position:relative
-}
-
-.image-text-container
-{
+.artist-overlay-text {
     position: absolute;
-    right: 0;
-    bottom: 20px;
-}
-
-.image-text
-{
-    color: #FFE500;
-    font-family: 'Lora', sans-serif;
-    font-weight: 700;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #FF7A00;
     text-align: center;
-    font-size: 22px;
-    padding-top: 25px;
+    z-index: 2; /* Ensures text is always on top */
 }
 
-.image-text:hover
-{
-    transform: scale(3,3) rotate(40deg);
-    transition: all 0.5s ease-out;
+.artist-overlay-text p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lora', sans-serif;
+}
+
+.indent {
+    
 }
