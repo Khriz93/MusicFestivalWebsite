@@ -145,11 +145,11 @@ body {
     font-family: 'Bangers', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: 31px 0 20px 30px;
+    margin: 18px 0 20px 30px;
 }
  
 .title-underline {
-    width: 250px;
+    width: 240px;
     height: 5px;
     background-color: #FF0000;
     border-radius: 20px;
@@ -161,11 +161,14 @@ body {
     flex-wrap: wrap;
 }
 
-.image-text-container {
+.show-image-text-container, .artist-image-text-container {
     width: 205px;
     height: 220px;
-    margin: 55px auto;
     position: relative;
+}
+
+.show-image-text-container {
+    margin: 53px auto 20px;
 }
 
 .shows-img {
@@ -200,6 +203,7 @@ body {
     font-weight: 700;
     text-align: center;
     font-size: 22px;
+    margin: 0 20px;
     padding-top: 10px; /* Allow some padding between the bottom of the overlay-text and the top of this text */
 }
 
@@ -214,12 +218,16 @@ body {
     flex-wrap: wrap;
 }
 
+.artist-image-text-container {
+    margin: 5px auto;
+}
+
 .artist-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
-    margin: 30px 35px 18px;
+    margin: 40px 35px 18px;
 }
 
 .artist-overlay-text {
@@ -247,5 +255,29 @@ body {
 }
 
 .surgeon {
-    margin-left: 80px;
+    margin-left: 85px;
+}
+
+.genres {
+    width: 100%;
+    height: 410px;
+}
+
+.genre-list {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Lora', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.dot-point {
+    /* I wanted to make a space between the lists but when setting margin left and right to auto nothing happened */
+    margin: 72px 25px 0; 
+}
+
+.a:hover {
+    color: #00FFD1;
 }
