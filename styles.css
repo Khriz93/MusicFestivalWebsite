@@ -270,14 +270,11 @@ body {
     font-family: 'Lora', sans-serif;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
     margin: 0 auto;
 }
 
 .dot-point {
     /* I wanted to make a space between the lists but when setting margin left and right to auto nothing happened */
-    margin: 72px 25px 0; 
-}
-
-.a:hover {
-    color: #00FFD1;
+    margin: 72px 20px 0 20px; 
 }
