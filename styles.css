@@ -13,7 +13,7 @@ body {
 .header {
     width: 100%;
     height: 755px;
-    background-image: linear-gradient(to bottom, transparent, #111111), url("/assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg");
+    background-image: linear-gradient(to bottom, transparent, #111), url("/assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,6 +275,7 @@ body {
 }
 
 .dot-point {
-    /* I wanted to make a space between the lists but when setting margin left and right to auto nothing happened */
+    /* I wanted to make a space between the lists and for them to be centred
+        but when setting margin left and right to auto nothing happened */
     margin: 72px 20px 0 20px; 
 }
