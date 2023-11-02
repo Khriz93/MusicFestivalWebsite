@@ -27,39 +27,44 @@ body {
     align-items: center;
 }
 
-.logo {
-    color: #FFFFFF;
-    font-family: 'Rock Salt', cursive, sans-serif;
+.logo, .footer-logo {
     width: 190px;
     height: 50px;
-    margin-left: 36px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Rock Salt', cursive, sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
 
+.logo {
+    margin-left: 35px;
+}
+
 .hamburger-menu {
     width: 50px;
     height: 50px;
     margin-right: 36px;
+    cursor: pointer;
 }
 
 .fa-bars {
     color: white;
-    font-size: 36px;
+    font-size: 35px;
 }
 
-.ticket-banner {
+.ticket-banner, .tickets-page-banner {
     width: 360px;
     height: 160px;
     background-color: rgba(182, 11, 0, 0.5);
     border: 3px solid #FF0F00;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 57px auto;
 }
 
-.limited-time, .tickets-available, .only {
+.limited-time, .limited-time-tickets, .tickets-available, .tickets-available-tickets, .only, .only-tickets {
     width: 335px;
     font-family: 'Bangers', sans-serif;
     color: #FFE500;
@@ -76,13 +81,13 @@ body {
 
 .tickets-available {
     height: 24px;
-    font-size: 24px;
+    font-size: 25px;
     margin: 2px 13px;
 }
 
 .only {
     height: 28px;
-    font-size: 32px;
+    font-size: 33px;
     margin-left: 13px;
     margin-right: 13px;
 }
@@ -133,7 +138,7 @@ body {
 .shows {
     width: 100%;
     height: 750px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .page-title {
@@ -157,6 +162,7 @@ body {
 
 .show-locations {
     width: 100%;
+    height: 610px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -165,10 +171,11 @@ body {
     width: 205px;
     height: 220px;
     position: relative;
+    cursor: pointer;
 }
 
 .show-image-text-container {
-    margin: 53px auto 20px;
+    margin: 53px auto;
 }
 
 .shows-img {
@@ -176,7 +183,7 @@ body {
     height: 145px;
     object-fit: cover;
     border-radius: 20px;
-    margin: 30px 35px 18px;
+    margin: 30px 35px 18px 35px;
 }
 
 .overlay-text {
@@ -199,7 +206,7 @@ body {
     width: 200px;
     height: 75px;
     color: #FFE500;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     text-align: center;
     font-size: 22px;
@@ -209,7 +216,7 @@ body {
 
 .artists {
     width: 100%;
-    height: 820px;
+    height: 720px;
 }
 
 .artist-info {
@@ -219,7 +226,7 @@ body {
 }
 
 .artist-image-text-container {
-    margin: 5px auto;
+    margin: 20px auto;
 }
 
 .artist-img {
@@ -227,7 +234,7 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
-    margin: 40px 35px 18px;
+    margin: 40px 35px 18px 35px;
 }
 
 .artist-overlay-text {
@@ -243,39 +250,198 @@ body {
 .artist-overlay-text p {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     margin-right: 55px;
-    margin-bottom: 0;
 }
 
 .indent {
     text-align: right;
-    margin-left: 75px;
-    margin-top: 0;
+    margin-left: 65px;
 }
 
-.surgeon {
-    margin-left: 85px;
+.surgeon-text {
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
 .genres {
     width: 100%;
-    height: 410px;
+    height: 480px;
 }
 
-.genre-list {
-    display: flex;
-    flex-direction: row;
+.genre-column {
+    width: 50%;
+    float: left;
+}
+
+.dot-point {
     color: white;
-    font-family: 'Lora', sans-serif;
-    font-size: 24px;
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.dot-point:hover {
+    cursor: pointer;
+    color: #00FFD1;
+}
+
+.tickets {
+    width: 100%;
+    height: 680px;
+}
+
+.tickets-page-banner {
+    margin-top: 65px;
+}
+
+.limited-time-tickets {
+    height: 30px;
+    font-size: 34px;
+    margin: 18px auto;
+}
+
+.tickets-available-tickets {
+    height: 25px;
+    font-size: 29px;
+    margin: 0 auto;
+}
+
+.only-tickets {
+    height: 30px;
+    font-size: 40px;
+    margin: 18px auto;
+}
+
+.at-the-door-text {
+    width: 200px;
+    height: 75px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.buy-tickets-button {
+    display: block;
+    width: 320px;
+    height: 85px;
+    background-color: rgba(190, 82, 4, 40%);
+    border: 4px solid #FF6B00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.buy-tickets-button:hover, .merch-button {
+    cursor: pointer;
+}
+
+.buy-tickets-text {
+    width: 300px;
+    height: 70px;
+    color: white;
+    font-size: 52px;
+    font-weight: 400;
+    font-family: 'Bangers', sans-serif;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    justify-content: center;
+    margin: 12px auto;
+}
+
+.buy-tickets-text:hover, .merch-button-text:hover {
+    color: #00FFD1;
+}
+
+.merch {
+    width: 100%;
+    height: 440px;
+}
+
+.merch-text {
+    width: 365px;
+    height: 60px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.merch-button {
+    display: block;
+    width: 270px;
+    height: 75px;
+    background-color: rgba(0, 150, 123, 42%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 3px solid #00FFD1;
+    margin: 0 auto;
+}
+
+.merch-button-text {
+    width: 240px;
+    height: 70px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Bangers', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    margin: 10px auto;
+}
+
+footer {
+    width: 100%;
+    height: 195px;
+    background-image: linear-gradient(to top, transparent, #111), url("/assets/crowds/pim-myten-m41k1lTzjVM-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-logo {
+    margin-left: 5px;
+}
+
+.signup, .contact {
+    display: block;
+    width: 190px;
+    height: 40px;
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lora', serif;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
 }
 
-.dot-point {
-    /* I wanted to make a space between the lists and for them to be centred
-        but when setting margin left and right to auto nothing happened */
-    margin: 72px 20px 0 20px; 
+.signup:hover, .contact:hover {
+    cursor: pointer;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+.fa-square-facebook, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+    color: white;
+    margin: 10px 18px;
+}
+
+.fa-square-facebook, .fa-instagram, .fa-youtube {
+    font-size: 40px;
+}
+
+.fa-tiktok, .fa-spotify {
+    font-size: 30px;
+    margin-top: 15px;
 }
