@@ -10,6 +10,17 @@ body {
     background-color: #111;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header {
     width: 100%;
     height: 755px;
@@ -17,6 +28,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logo h1 {
+    width: 190px;
+    height: 50px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 35px;
 }
 
 .top-menu {
@@ -27,44 +51,28 @@ body {
     align-items: center;
 }
 
-.logo, .footer-logo {
-    width: 190px;
-    height: 50px;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-family: 'Rock Salt', cursive, sans-serif;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.logo {
-    margin-left: 35px;
-}
-
 .hamburger-menu {
     width: 50px;
     height: 50px;
     margin-right: 36px;
-    cursor: pointer;
 }
 
-.fa-bars {
+.hamburger-menu i {
+    font-size: 40px;
     color: white;
-    font-size: 35px;
 }
 
-.ticket-banner, .tickets-page-banner {
+.ticket-banner {
     width: 360px;
     height: 160px;
     background-color: rgba(182, 11, 0, 0.5);
     border: 3px solid #FF0F00;
     border-radius: 20px;
-    margin: 57px auto;
+    margin: 60px auto;
 }
 
-.limited-time, .limited-time-tickets, .tickets-available, .tickets-available-tickets, .only, .only-tickets {
+
+.ticket-banner-font-style {
     width: 335px;
     font-family: 'Bangers', sans-serif;
     color: #FFE500;
@@ -88,8 +96,7 @@ body {
 .only {
     height: 28px;
     font-size: 33px;
-    margin-left: 13px;
-    margin-right: 13px;
+    margin: 0 auto;
 }
 
 .buy-now-button {
@@ -103,12 +110,11 @@ body {
     -webkit-text-stroke: 1px black;
     font-size: 38px;
     text-align: center;
-    margin: 18px 10px;
+    margin: 20px auto;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buy-now-button:hover {
-    cursor: pointer;
     color: blue;
 }
 
@@ -121,7 +127,7 @@ body {
     font-size: 82px;
     font-weight: 400;
     text-align: center;
-    margin: 90px auto 68px;
+    margin: 90px auto 65px;
 }
 
 .tag-line {
@@ -163,15 +169,12 @@ body {
 .show-locations {
     width: 100%;
     height: 610px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .show-image-text-container, .artist-image-text-container {
     width: 205px;
     height: 220px;
     position: relative;
-    cursor: pointer;
 }
 
 .show-image-text-container {
@@ -189,14 +192,14 @@ body {
 .overlay-text {
     position: absolute;
     top: 75%;
-    left: 80%;
+    left: 75%;
     transform: translate(-50%, -50%);
     color: #FF7A00;
     text-align: center;
     z-index: 2; /* Ensures text is always on top */
 }
 
-.overlay-text p {
+.city {
     font-size: 40px;
     font-weight: 400;
     font-family: 'Bangers', sans-serif;
@@ -214,15 +217,9 @@ body {
     padding-top: 10px; /* Allow some padding between the bottom of the overlay-text and the top of this text */
 }
 
-.artists {
+.artists-page {
     width: 100%;
     height: 720px;
-}
-
-.artist-info {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .artist-image-text-container {
@@ -237,26 +234,20 @@ body {
     margin: 40px 35px 18px 35px;
 }
 
-.artist-overlay-text {
-    position: absolute;
-    top: 75%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    color: #FF7A00;
-    text-align: center;
-    z-index: 2; /* Ensures text is always on top */
-}
-
-.artist-overlay-text p {
+.artist {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Lora', serif;
     margin-right: 55px;
 }
 
-.indent {
+.artist-first-name {
+    margin-right: 20px;
+}
+
+.artist-last-name {
     text-align: right;
-    margin-left: 65px;
+    margin-left: 45px;
 }
 
 .surgeon-text {
@@ -264,7 +255,7 @@ body {
     margin-left: 40px;
 }
 
-.genres {
+.genres-page {
     width: 100%;
     height: 480px;
 }
@@ -284,17 +275,12 @@ body {
 }
 
 .dot-point:hover {
-    cursor: pointer;
     color: #00FFD1;
 }
 
 .tickets {
     width: 100%;
     height: 680px;
-}
-
-.tickets-page-banner {
-    margin-top: 65px;
 }
 
 .limited-time-tickets {
@@ -337,10 +323,6 @@ body {
     margin: 0 auto;
 }
 
-.buy-tickets-button:hover, .merch-button {
-    cursor: pointer;
-}
-
 .buy-tickets-text {
     width: 300px;
     height: 70px;
@@ -358,7 +340,7 @@ body {
     color: #00FFD1;
 }
 
-.merch {
+.merch-page {
     width: 100%;
     height: 440px;
 }
@@ -398,7 +380,6 @@ body {
 }
 
 footer {
-    width: 100%;
     height: 195px;
     background-image: linear-gradient(to top, transparent, #111), url("/assets/crowds/pim-myten-m41k1lTzjVM-unsplash.jpg");
     background-position: center;
@@ -407,10 +388,18 @@ footer {
 }
 
 .footer-logo {
+    width: 190px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Rock Salt', cursive, sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
     margin-left: 5px;
 }
 
-.signup, .contact {
+.footer-links {
     display: block;
     width: 190px;
     height: 40px;
@@ -424,18 +413,15 @@ footer {
     margin: 0 auto;
 }
 
-.signup:hover, .contact:hover {
+.links {
     cursor: pointer;
 }
 
-.social-media-icons {
-    display: flex;
-    justify-content: center;
-}
-.fa-square-facebook, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+.social-media-icons i {
     color: white;
     margin: 10px 18px;
 }
+
 
 .fa-square-facebook, .fa-instagram, .fa-youtube {
     font-size: 40px;

@@ -17,28 +17,30 @@
     <!-- Header Page -->
     <div class="header">
         <div class="top-menu">
-            <div class="logo">
-                <p>Elektrik Eel</p>
+            <div class="logo links">
+                <h1>Elektrik Eel</h1>
             </div>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu center links">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-        <div class="ticket-banner">
+        <div class="ticket-banner ticket-banner-font-style">
             <div class="limited-time">
                 <p>LIMITED TIME ONLY!</p>
             </div>
             <div class="tickets-available">
                 <p>EARLY BIRD TICKETS AVAILABLE NOW</p>
             </div>
-            <div class="only">
+            <div class="only ticket-banner-font-style">
                 <p>ONLY $129!</p>
             </div>
             <div>
-                <button class="buy-now-button">BUY NOW!</button>
+                <button class="buy-now-button links">BUY NOW!</button>
             </div>
         </div>
         <div class="elektrik-eel">
+        <!-- Using a h2 tag here didn't work with the font family 'Bangers' and made the font look weird.
+             So I used a <p> tag instead -->
             <p>ELEKTRIK EEL FESTIVAL</p>
         </div>
         <div class="tag-line">
@@ -48,17 +50,15 @@
     <!-- Shows Page -->
     <div class="shows">
         <div class="page-title">
-            <!-- Using a h2 tag here didn't work with the font family 'Bangers' and made the font look weird.
-                 So I used a <p> tag instead -->
             <p>SHOWS</p>
         </div>
         <!-- Put the underline outside of the title as it was doing weird things with the margin -->
         <div class="title-underline"></div>
         <!-- Show Locations -->
-        <div class="show-locations">
-                <div class="show-image-text-container">
+        <div class="show-locations flex-wrap">
+                <div class="show-image-text-container links">
                     <img src="assets/crowds/antoine-j-A_0C42zmz1Q-unsplash.jpg" alt="Brisbane Show Image" class="shows-img">
-                    <div class="overlay-text">
+                    <div class="city overlay-text">
                         <p>BRISBANE</p>
                     </div>
                     <div class="shows-text">
@@ -67,9 +67,9 @@
                         <p>Starts 10pm</p>
                 </div>
             </div>
-            <div class="show-image-text-container">
+            <div class="show-image-text-container links">
                 <img src="assets/crowds/aleksandr-popov-R25Q-pAUeY8-unsplash.jpg" alt="Sydney Show Image" class="shows-img" >
-                <div class="overlay-text">
+                <div class="city overlay-text">
                     <p>SYDNEY</p>
                 </div>
                 <div class="shows-text">
@@ -78,9 +78,9 @@
                     <p>Starts 10pm</p>
                 </div>
             </div>
-            <div class="show-image-text-container">
+            <div class="show-image-text-container links">
                 <img src="assets/aleksandr-popov-xfQZM-SBhkE-unsplash.jpg" alt="Melbourne Show Image" class="shows-img">
-                <div class="overlay-text">
+                <div class="city overlay-text">
                     <p>MELBOURNE</p>
                 </div>
                 <div class="shows-text">
@@ -92,63 +92,63 @@
         </div>
     </div>
     <!-- Artists Page -->
-    <div class="artists">
+    <div class="artists-page">
         <div class="page-title">
             <p>ARTISTS</p>
         </div>
         <div class="title-underline"></div>
-        <div class="artist-info">
-            <div class="artist-image-text-container">
+        <div class="flex-wrap">
+            <div class="artist-image-text-container links">
                 <img src="/assets/artists/richie-hawtin-press-photo.png" alt="Richie Hawtin Image" class="artist-img">
-                <div class="artist-overlay-text">
-                    <p>Richie</p>
-                    <p class="indent">Hawtin</p>
+                <div class="artist overlay-text">
+                    <p class="artist-first-name">Richie</p>
+                    <p class="artist-last-name">Hawtin</p>
                 </div>
             </div>
-            <div class="artist-image-text-container">
+            <div class="artist-image-text-container links">
                 <img src="/assets/artists/robert_hood1.jpg" alt="Robert Hood Image" class="artist-img">
-                <div class="artist-overlay-text">
-                    <p>Robert</p>
-                    <p class="indent">Hood</p>
+                <div class="artist overlay-text">
+                    <p class="artist-first-name">Robert</p>
+                    <p class="artist-last-name">Hood</p>
                 </div>
             </div>
-            <div class="artist-image-text-container">
+            <div class="artist-image-text-container links">
                 <img src="/assets/artists/Surgeon.PNG" alt="Surgeon Image" class="artist-img">
-                <div class="artist-overlay-text">
+                <div class="artist overlay-text">
                     <p class="surgeon-text">Surgeon</p>
                 </div>
             </div>
-            <div class="artist-image-text-container">
+            <div class="artist-image-text-container links">
                 <img src="/assets/artists/oscar_mulero.jpg" alt="Oscar Mulero Image" class="artist-img">
-                <div class="artist-overlay-text">
-                    <p>Oscar</p>
-                    <p class="indent">Mulero</p>
+                <div class="artist overlay-text">
+                    <p class="artist-first-name">Oscar</p>
+                    <p class="artist-last-name">Mulero</p>
                 </div>
             </div>
-            <div class="artist-image-text-container">
+            <div class="artist-image-text-container links">
                 <img src="/assets/artists/Robah Whrume.jpg" alt="Robag Wruhme Image" class="artist-img">
-                <div class="artist-overlay-text">
-                    <p>Robag</p>
-                    <p class="indent">Wruhme</p>
+                <div class="artist overlay-text">
+                    <p class="artist-first-name">Robag</p>
+                    <p class="artist-last-name">Wruhme</p>
                 </div>
         </div>
     </div>
     <!-- Genres page -->
-    <div class="genres">
+    <div class="genres-page">
         <div class="page-title">
             <p>GENRES</p>
         </div>
         <div class="title-underline"></div>
         <div>
             <div class="genre-column">
-                <p class="dot-point">Acid House</p>
-                <p class="dot-point">Deep House</p>
-                <p class="dot-point">Dark Electro</p>
+                <p class="dot-point links">Acid House</p>
+                <p class="dot-point links">Deep House</p>
+                <p class="dot-point links">Dark Electro</p>
             </div>
             <div class="genre-column">
-                <p class="dot-point">Chicago House</p>
-                <p class="dot-point">Tribal House</p>
-                <p class="dot-point">Industrial</p>
+                <p class="dot-point links">Chicago House</p>
+                <p class="dot-point links">Tribal House</p>
+                <p class="dot-point links">Industrial</p>
             </div>
         </div>
     </div>
@@ -158,26 +158,26 @@
             <p>TICKETS</p>
         </div>
         <div class="title-underline"></div>
-        <div class="tickets-page-banner">
-            <div class="limited-time-tickets">
+        <div class="ticket-banner">
+            <div class="limited-time-tickets ticket-banner-font-style">
                 <p>LIMITED TIME ONLY!</p>
             </div>
-            <div class="tickets-available-tickets">
+            <div class="tickets-available-tickets ticket-banner-font-style">
                 <p>EARLY BIRD TICKETS AVAILABLE NOW</p>
             </div>
-            <div class="only-tickets">
+            <div class="only-tickets ticket-banner-font-style">
                 <p>ONLY $129!</p>
             </div>
             <div class="at-the-door-text">
                 <p>At The Door $159</p>
             </div>
-            <button class="buy-tickets-button">
+            <button class="buy-tickets-button links">
                 <p class="buy-tickets-text">BUY TICKETS</p>
             </button>
         </div>
     </div>
     <!-- Merch page -->
-    <div class="merch">
+    <div class="merch-page">
         <div class="page-title">
             <p>MERCH</p>
         </div>
@@ -185,22 +185,22 @@
         <div class="merch-text">
             <p>Head to our Merch Store to grab some of the latest merch</p>
         </div>
-        <button class="merch-button">
+        <button class="merch-button links">
             <p class="merch-button-text">MERCH STORE</p>
         </button>
     </div>
     <!-- Footer -->
     <footer>
-        <div class="footer-logo">
+        <div class="footer-logo links">
             <p>Elektrik Eel</p>
         </div>
-        <button class="signup">
+        <button class="footer-links">
             <p>Sign Up</p>
         </button>
-        <button class="contact">
+        <button class="footer-links">
             <p>Contact Us</p>
         </button>
-        <div class="social-media-icons">
+        <div class="social-media-icons center">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
