@@ -28,17 +28,32 @@ a:link {
 .mobile-menu {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     z-index: 999;
     display: none;
 }
 
+.menu-exit {
+    height: 55px;
 
+}
+.menu-column-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
 
-.menu-links p {
-    font-size: 20px;
-    padding: 20px 10px 10px;
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    line-height: 90px;
+}
+
+.mobile-menu a {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
 }
 
 .mobile-menu i {
