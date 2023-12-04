@@ -12,15 +12,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer src="/js/main.js"></script>
 </head>
 <body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div>
+            <i class="fa-solid fa-x links" onclick="CloseMenu()"></i>
+        </div>
+        <div class="menu-links">
+            <p><a href="/index.html">Home</a></p>
+            <p><a href="/artists.html">Artists</a></p>
+            <p><a href="#Contact">Contact</a></p>
+    </div>
+    </div>
     <!-- Header Page -->
     <div class="header">
         <div class="top-menu">
+            <a href="index.html">
             <div class="logo links">
                 <h1>Elektrik Eel</h1>
             </div>
-            <div class="hamburger-menu center links">
+            </a>
+            <div onclick="OpenMenu()" class="hamburger-menu center links">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -56,17 +70,20 @@
         <div class="title-underline"></div>
         <!-- Show Locations -->
         <div class="show-locations flex-wrap">
+            <a href="https://www.google.com/search?q=Brisbane&rlz=1C1UEAD_enAU1061AU1061&oq=Brisbane&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMgkIAhAjGCcYigUyCggDEC4YsQMYgAQyDQgEEAAYgwEYsQMYgAQyEwgFEC4YgwEYrwEYxwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEAAYgwEYsQMYgATSAQk0MTcxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">
                 <div class="show-image-text-container links">
                     <img src="assets/crowds/antoine-j-A_0C42zmz1Q-unsplash.jpg" alt="Brisbane Show Image" class="shows-img">
-                    <div class="city overlay-text">
+                        <div class="city overlay-text">
                         <p>BRISBANE</p>
-                    </div>
-                    <div class="shows-text">
-                        <p>Dec 19th</p>
-                        <p>Fortitude Valley</p>
-                        <p>Starts 10pm</p>
-                    </div>
+                </div>
+                <div class="shows-text">
+                    <p>Dec 19th</p>
+                    <p>Fortitude Valley</p>
+                    <p>Starts 10pm</p>
+                </div>
+            </a>
             </div>
+            <a href="https://www.google.com/search?q=sydney&rlz=1C1UEAD_enAU1061AU1061&oq=Sydney&gs_lcrp=EgZjaHJvbWUqDwgAEAAYQxjjAhixAxiKBTIPCAAQABhDGOMCGLEDGIoFMgwIARAuGEMYsQMYigUyCQgCEAAYQxiKBTISCAMQLhhDGK8BGMcBGLEDGIoFMgwIBBAAGBQYhwIYgAQyCQgFEAAYQxiKBTIHCAYQABiABDIJCAcQABhDGIoFMg8ICBAAGEMYgwEYsQMYigUyEwgJEC4YgwEYxwEYsQMY0QMYgATSAQkzMzM4ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">
             <div class="show-image-text-container links">
                 <img src="assets/crowds/aleksandr-popov-R25Q-pAUeY8-unsplash.jpg" alt="Sydney Show Image" class="shows-img" >
                 <div class="city overlay-text">
@@ -77,7 +94,9 @@
                     <p>S.A.S.H, CBD</p>
                     <p>Starts 10pm</p>
                 </div>
+            </a>
             </div>
+            <a href="https://www.google.com/search?q=melbourne&sca_esv=581692793&rlz=1C1UEAD_enAU1061AU1061&sxsrf=AM9HkKkoQ9lBSAEguxtFPsRuEVoq4d_0OQ%3A1699791939484&ei=Q8RQZfeQHYTWseMPhKqbyA0&ved=0ahUKEwi3vvq1ur6CAxUEa2wGHQTVBtkQ4dUDCBA&uact=5&oq=melbourne&gs_lp=Egxnd3Mtd2l6LXNlcnAiCW1lbGJvdXJuZTINEC4YgwEYsQMYigUYQzINEAAYigUYsQMYgwEYQzIHEAAYigUYQzIIEC4YgAQYsQMyBxAAGIoFGEMyBxAuGIoFGEMyBxAAGIoFGEMyBxAAGIoFGEMyChAAGIAEGBQYhwIyBxAAGIoFGENIoQ5QAFihDHAAeAGQAQCYAf4BoAGZD6oBBTAuMy42uAEDyAEA-AEBwgINEC4YigUYxwEY0QMYQ8ICChAAGIoFGLEDGEPCAggQABiABBixA8ICBRAAGIAEwgIREC4YgAQYsQMYgwEYxwEY0QPCAhYQLhiKBRhDGJcFGNwEGN4EGOAE2AEBwgIKEC4YigUYsQMYQ8ICExAuGIoFGLEDGIMBGMcBGNEDGEPCAgsQABiABBixAxiDAcICGRAuGIoFGLEDGEMYlwUY3AQY3gQY4ATYAQHCAgsQABiKBRixAxiDAcICDRAuGIoFGLEDGIMBGEPCAiUQLhiDARixAxiKBRhDGJcFGNwEGN4EGOAEGPQDGPEDGPUD2AEB4gMEGAAgQYgGAboGBggBEAEYFA&sclient=gws-wiz-serp" target="_blank">
             <div class="show-image-text-container links">
                 <img src="assets/crowds/aleksandr-popov-xfQZM-SBhkE-unsplash.jpg" alt="Melbourne Show Image" class="shows-img">
                 <div class="city overlay-text">
@@ -88,6 +107,7 @@
                     <p>New Guernica, CBD</p>
                     <p>Starts 10pm</p>
                 </div>
+            </a>
             </div>
         </div>
     </div>
@@ -98,39 +118,49 @@
         </div>
         <div class="title-underline"></div>
         <div class="flex-wrap">
+            <a href="/artists-html-pages/richie-hawtin.html" target="_blank">
             <div class="artist-image-text-container links">
                 <img src="/assets/artists/richie-hawtin-press-photo.png" alt="Richie Hawtin Image" class="artist-img">
                 <div class="artist overlay-text">
                     <p class="artist-first-name">Richie</p>
                     <p class="artist-last-name">Hawtin</p>
                 </div>
+            </a>
             </div>
+            <a href="/artists-html-pages/robert-hood.html" target="_blank">
             <div class="artist-image-text-container links">
                 <img src="/assets/artists/robert_hood1.jpg" alt="Robert Hood Image" class="artist-img">
                 <div class="artist overlay-text">
                     <p class="artist-first-name">Robert</p>
                     <p class="artist-last-name">Hood</p>
                 </div>
+            </a>
             </div>
+            <a href="/artists-html-pages/surgeon.html" target="_blank">
             <div class="artist-image-text-container links">
                 <img src="/assets/artists/Surgeon.PNG" alt="Surgeon Image" class="artist-img">
                 <div class="artist overlay-text">
                     <p class="surgeon-text">Surgeon</p>
                 </div>
+            </a>
             </div>
+            <a href="/artists-html-pages/oscar-mulero.html" target="_blank">
             <div class="artist-image-text-container links">
                 <img src="/assets/artists/oscar_mulero.jpg" alt="Oscar Mulero Image" class="artist-img">
                 <div class="artist overlay-text">
                     <p class="artist-first-name">Oscar</p>
                     <p class="artist-last-name">Mulero</p>
                 </div>
+            </a>
             </div>
+            <a href="/artists-html-pages/robag-wruhme.html" target="_blank">
             <div class="artist-image-text-container links">
                 <img src="/assets/artists/Robah Whrume.jpg" alt="Robag Wruhme Image" class="artist-img">
                 <div class="artist overlay-text">
                     <p class="artist-first-name">Robag</p>
                     <p class="artist-last-name">Wruhme</p>
                 </div>
+            </a>
         </div>
     </div>
     <!-- Genres page -->
@@ -191,8 +221,14 @@
     </div>
     <!-- Footer Section-->
     <footer>
+        <a href="/index.html">
+        <div class="footer-logo-and-return-to-top-container"></div>
         <div class="footer-logo links">
             <p>Elektrik Eel</p>
+        </div>
+        </a>
+        <div class="return-to-top-container">
+            <button onclick="ScrollToTopFunction()" id="myBtn" title="Return to top">Return To Top</button>
         </div>
         <button class="footer-links">
             <p class="links">Sign Up</p>
@@ -201,11 +237,11 @@
             <p class="links">Contact Us</p>
         </button>
         <div class="social-media-icons center">
-            <i class="fa-brands fa-square-facebook links"></i>
-            <i class="fa-brands fa-instagram links"></i>
-            <i class="fa-brands fa-youtube links"></i>
-            <i class="fa-brands fa-tiktok links"></i>
-            <i class="fa-brands fa-spotify links"></i>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook links"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram links"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube links"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok links"></i></a>
+            <a href="https://spotify.com" target="_blank"><i class="fa-brands fa-spotify links"></i></a>
         </div>
     </footer>
 </body>

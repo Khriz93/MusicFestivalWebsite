@@ -21,8 +21,49 @@ body {
     flex-wrap: wrap;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+
+.menu-links p {
+    font-size: 20px;
+    padding: 20px 10px 10px;
+}
+
+.mobile-menu i {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#myBtn {
+    border: none; 
+    outline: none; 
+    background-color: #111; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 20px; 
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(0, 85, 243, 0.25);
+  }
+
 .header {
-    width: 100%;
+    width: 100vw;
     height: 755px;
     background-image: linear-gradient(to bottom, transparent, #111), url("/assets/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg");
     background-position: center;
@@ -378,7 +419,8 @@ body {
 }
 
 footer {
-    height: 195px;
+    width: 100vw;
+    height: 250px;
     background-image: linear-gradient(to top, transparent, #111), url("/assets/crowds/pim-myten-m41k1lTzjVM-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -395,6 +437,12 @@ footer {
     font-weight: 400;
     text-align: center;
     margin-left: 5px;
+}
+
+.return-to-top-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
 }
 
 .footer-links {
