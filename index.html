@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elektrik Eel Festival</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/desktop.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,16 +16,18 @@
     <script defer src="/js/main.js"></script>
 </head>
 <body>
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu Drop Down -->
     <div class="mobile-menu">
-        <div class="menu-exit">
-            <i class="fa-solid fa-x links" onclick="CloseMenu()"></i>
+        <div class="menu-exit" onclick="CloseMenu()">
+            <i class="fa-solid fa-x"></i>
         </div>
         <div class="menu-column-container">
             <div class="menu-column">
-                <a href="/index.html">Home</a>
+                <a href="/index.html">Shows</a>
                 <a href="/artistis.html">Artists</a>
-                <a href="#Contact">Contact</a>
+                <a href="#Genres">Genres</a>
+                <a href="#Tickets">Tickets</a>
+                <a href="#Merch">Merch</a>
             </div>
         </div>
     </div>
@@ -36,8 +39,16 @@
                 <h1>Elektrik Eel</h1>
             </div>
             </a>
+            <!-- Mobile Hamburger Menu -->
             <div onclick="OpenMenu()" class="hamburger-menu center links">
                 <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="desktop-menu">
+                <a href="/index.html">Shows</a>
+                <a href="/artistis.html">Artists</a>
+                <a href="#Genres">Genres</a>
+                <a href="#Tickets">Tickets</a>
+                <a href="#Merch">Merch</a>
             </div>
         </div>
         <div class="ticket-banner ticket-banner-font-style">
@@ -47,7 +58,7 @@
             <div class="tickets-available">
                 <p>EARLY BIRD TICKETS AVAILABLE NOW</p>
             </div>
-            <div class="only ticket-banner-font-style">
+            <div class="only">
                 <p>ONLY $129!</p>
             </div>
             <div>
@@ -230,7 +241,7 @@
         </div>
         </a>
         <div class="return-to-top-container">
-            <button onclick="ScrollToTopFunction()" id="myBtn" title="Return to top">Return To Top</button>
+            <button onclick="ScrollToTopFunction()" id="return-to-top-button" title="Return to top">Return To Top</button>
         </div>
         <button class="footer-links">
             <p class="links">Sign Up</p>

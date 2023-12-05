@@ -1,0 +1,105 @@
+@media screen and (min-width: 1025px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        margin: auto;
+        padding-right: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-menu a {
+        color: white;
+        margin: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Lora', sans-serif;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .tag-line {
+        width: 1230px;
+        font-size: 28px;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width: 650px) {
+    .header {
+        height: 1050px;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .ticket-banner {
+        width: 455px;
+        height: 240px;
+    }
+
+    .ticket-banner-font-style {
+        width: 425px;
+    }
+
+    .limited-time {
+        height: 36px;
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+
+    .tickets-available {
+        height: 30px;
+        font-size: 34px;
+    }
+
+    .only {
+        height: 35px;
+        font-size: 44px;
+        margin-top: 12px;
+    }
+
+    .buy-now-button {
+        background-color: inherit;
+        height: 55px;
+        font-size: 55px;
+        margin-top: 32px;
+    }
+
+    .elektrik-eel {
+        width: 600px;
+        height: 250px;
+        font-size: 100px;
+    }
+
+    .page-title {
+        width: 260px;
+        height: 85px;
+        font-size: 72px;
+        margin-bottom: -15px;
+    }
+
+    .title-underline {
+        width: 405px;
+        margin: 0;
+    }
+
+
+    .shows {
+        height: 450px;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) {
+    .desktop-menu {
+        display: none;
+    }
+}
