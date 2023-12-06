@@ -159,8 +159,8 @@
             </div>
             <a href="/artists.html" target="_blank">
             <div class="artist-image-text-container links">
-                <img src="/assets/artists/oscar_mulero.jpg" alt="Oscar Mulero Image" class="artist-img">
-                <div class="artist overlay-text">
+                <img src="/assets/artists/oscar_mulero.jpg" alt="Oscar Mulero Image" class="artist-img oscar-img">
+                <div class="artist overlay-text oscar-text">
                     <p class="artist-first-name">Oscar</p>
                     <p class="artist-last-name">Mulero</p>
                 </div>
@@ -168,8 +168,8 @@
             </div>
             <a href="/artists.html" target="_blank">
             <div class="artist-image-text-container links">
-                <img src="/assets/artists/Robah Whrume.jpg" alt="Robag Wruhme Image" class="artist-img">
-                <div class="artist overlay-text">
+                <img src="/assets/artists/Robah Whrume.jpg" alt="Robag Wruhme Image" class="artist-img robag-img">
+                <div class="artist overlay-text robag-text">
                     <p class="artist-first-name">Robag</p>
                     <p class="artist-last-name">Wruhme</p>
                 </div>
@@ -219,6 +219,34 @@
             </button>
         </div>
     </div>
+    <!-- Sign Up Form -->
+    <div class="signup-form-container" id="signup-form">
+        <div class="close-form">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <form>
+            <p class="sign-up-text">Sign Up To Receive The Latest Updates, Shows and Merch Releases</p>
+            <div class="container">
+                <label class="label-text">Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="container">
+                <label class="label-text">Email</label>
+                <input type="email" class="input">
+            </div>
+            <div class="container">
+                <label class="label-text">Mobile</label>
+                <input type="number" class="input">
+            </div>
+            <div class="container">
+                <input type="checkbox">
+                <p class="checkbox-text"> I have read the Terms And Conditions</p>
+            </div>
+            <div class="container">
+                <button class="submit-form-button">SUBMIT</button>
+            </div>
+        </form>
+    </div>
     <!-- Merch page -->
     <div class="merch-page">
         <div class="page-title">
@@ -243,7 +271,7 @@
         <div class="return-to-top-container">
             <button onclick="ScrollToTopFunction()" id="return-to-top-button" title="Return to top">Return To Top</button>
         </div>
-        <button class="footer-links">
+        <button onclick="OpenSignUpForm()"  class="footer-links">
             <p class="links">Sign Up</p>
         </button>
         <button class="footer-links">

@@ -1,4 +1,4 @@
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 950px) {
     .hamburger-menu {
         display: none;
     }
@@ -8,7 +8,7 @@
         margin: auto;
         padding-right: 250px;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .desktop-menu a {
@@ -21,6 +21,9 @@
     }
 }
 
+/* ----------------------------------------------- */
+/* Landing Page Desktop */
+
 @media screen and (min-width: 1025px) {
     .tag-line {
         width: 1230px;
@@ -30,7 +33,25 @@
     
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1415px) {
+    .robag-img {
+        margin-left: 620px;
+    }
+
+    .robag-text {
+        margin-left: 580px;
+    }
+
+
+}
+
+@media screen and (min-width: 350px) {
+    .shows {
+        height: 750px; 
+    }
+}
+
+@media screen and (min-width: 1025px) {
     .header {
         height: 1050px;
     }
@@ -41,7 +62,7 @@
     }
 
     .ticket-banner {
-        width: 455px;
+        width: 500px;
         height: 240px;
     }
 
@@ -71,6 +92,7 @@
         height: 55px;
         font-size: 55px;
         margin-top: 32px;
+        margin-bottom: 25px;
     }
 
     .elektrik-eel {
@@ -84,21 +106,166 @@
         height: 85px;
         font-size: 72px;
         margin-bottom: -15px;
+        margin-top: 50px;
     }
 
     .title-underline {
-        width: 405px;
+        width: 310px;
         margin: 0;
     }
 
+    .show-image-text-container {
+        width: 250px;
+    }
 
-    .shows {
-        height: 450px;
+    .show-locations {
+        margin: auto -90px;
+    }
+
+    .shows-img {
+        width: 285px;
+        height: 255px;
+    }
+
+    .overlay-text {
+        top: 115%;
+        left: 90%;
+    }
+
+    .city {
+       font-size: 70px; 
+    }
+
+    .shows-text {
+        width: 440px;
+        height: 165px;
+        font-size: 30px;
+        margin: 0 -50px;
+    }
+
+    .artists-page {
+        height: 995px;
+    }
+
+
+    .artist-image-text-container {
+        margin: 50px 100px 150px 80px;
+        padding: 10px;
+
+    }
+
+    .artist-img {
+        width: 300px;
+        height: 280px;
+    }
+
+    .artist {
+        font-size: 50px;
+        margin-top: 5px;
+        margin-right: 75px;
+    }
+
+    .artist-first-name {
+        margin-left: 80px;
+
+    }
+    .artist-last-name {
+        margin-right: -45px;
+    } 
+
+    .surgeon-text {
+        margin-left: 155px;
+        margin-top: 65px;
+    }
+
+    .genres {
+        height: 705px;
+    }
+
+    .dot-point {
+        font-size: 36px;
+    }
+
+    .tickets {
+        height: 935px;
+    }
+
+    .limited-time-tickets {
+        height: 45px;
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .tickets-available-tickets {
+        width: 500px;
+        height: 35px;
+        font-size: 40px;
+        margin: 29px auto;
+    }
+
+    .only-tickets {
+        width: 450px;
+        height: 45px;
+        font-size: 58px;
+    }
+
+    .at-the-door-text {
+        width: 350px;
+        height: 125px;
+        font-size: 46px;
+    }
+
+    .buy-tickets-button {
+        width: 450px;
+        height: 140px;
+    }
+
+    .buy-tickets-text {
+        width: 400px;
+        height: 95px;
+        font-size: 90px; 
+    }
+
+    .merch-page {
+        height: 570px;
+    }
+
+    .merch-text {
+        margin-top: 120px;
+        width: 900px;
+        height: 105px;
+        font-size: 30px;
     }
     
+    .merch-button {
+        width: 415px;
+        height: 130px;
+    }
+
+    .merch-button-text {
+        width: 380px;
+        height: 85px;
+        font-size: 80px;
+    }
+
+    .footer-logo {
+        width: 345px;
+        font-size: 32px;
+    }
+
+    .footer-links {
+        width: 410px;
+        font-size: 30px;
+    }
+
+    .social-media-icons i {
+        margin-top: 20px;
+    }
 }
 
-@media screen and (max-width: 1025px) {
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 950px) {
     .desktop-menu {
         display: none;
     }

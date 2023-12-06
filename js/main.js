@@ -1,6 +1,8 @@
 const mobileMenu = document.querySelector(".mobile-menu");
+const signupForm = document.getElementById("signup-form");
 const body = document.querySelector("body");
 
+// Menu
 function OpenMenu()
 {
     mobileMenu.style.display = "flex";
@@ -13,10 +15,8 @@ function CloseMenu()
     body.style.overflowY = "scroll";
 }
 
-
-
-
-let myButton = document.getElementById("myBtn");
+// Scroll to top feature
+let myButton = document.getElementById("return-to-top-button");
 
 // When the user clicks on the button, scroll to the top of the document
 function ScrollToTopFunction()
@@ -34,4 +34,11 @@ function ScrollToTopFunction()
             top: 0,
             behavior: "smooth"
         })
+}
+
+// Sign up form
+function OpenSignUpForm()
+{
+    signupForm.style.display = "block";
+    body.style.overflowY = "hidden";
 }
