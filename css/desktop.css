@@ -33,24 +33,6 @@
     
 }
 
-@media screen and (min-width: 1415px) {
-    .robag-img {
-        margin-left: 620px;
-    }
-
-    .robag-text {
-        margin-left: 580px;
-    }
-
-
-}
-
-@media screen and (min-width: 350px) {
-    .shows {
-        height: 750px; 
-    }
-}
-
 @media screen and (min-width: 1025px) {
     .header {
         height: 1100px;
@@ -112,6 +94,10 @@
     .title-underline {
         width: 310px;
         margin: 0;
+    }
+
+    .shows {
+        margin-bottom: -250px;
     }
 
     .show-image-text-container {
@@ -194,6 +180,7 @@
 
     .tickets {
         height: 935px;
+        margin-bottom: -110px;
     }
 
     .limited-time-tickets {
