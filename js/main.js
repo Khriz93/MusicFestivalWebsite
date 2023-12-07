@@ -42,3 +42,9 @@ function OpenSignUpForm()
     signupForm.style.display = "block";
     body.style.overflowY = "hidden";
 }
+
+function CloseSignUpForm()
+{
+    signupForm.style.display = "none";
+    body.style.overflowY = "scroll";
+}

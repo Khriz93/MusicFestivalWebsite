@@ -23,7 +23,8 @@
         </div>
         <div class="menu-column-container">
             <div class="menu-column">
-                <a href="/index.html">Shows</a>
+                <a href="/index.html">Home</a>
+                <a href="#Shows">Shows</a>
                 <a href="/artistis.html">Artists</a>
                 <a href="#Genres">Genres</a>
                 <a href="#Tickets">Tickets</a>
@@ -44,7 +45,8 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="desktop-menu">
-                <a href="/index.html">Shows</a>
+                <a href="/index.html">Home</a>
+                <a href="#Shows">Shows</a>
                 <a href="/artistis.html">Artists</a>
                 <a href="#Genres">Genres</a>
                 <a href="#Tickets">Tickets</a>
@@ -219,34 +221,6 @@
             </button>
         </div>
     </div>
-    <!-- Sign Up Form -->
-    <div class="signup-form-container" id="signup-form">
-        <div class="close-form">
-            <i class="fa-solid fa-x"></i>
-        </div>
-        <form>
-            <p class="sign-up-text">Sign Up To Receive The Latest Updates, Shows and Merch Releases</p>
-            <div class="container">
-                <label class="label-text">Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="container">
-                <label class="label-text">Email</label>
-                <input type="email" class="input">
-            </div>
-            <div class="container">
-                <label class="label-text">Mobile</label>
-                <input type="number" class="input">
-            </div>
-            <div class="container">
-                <input type="checkbox">
-                <p class="checkbox-text"> I have read the Terms And Conditions</p>
-            </div>
-            <div class="container">
-                <button class="submit-form-button">SUBMIT</button>
-            </div>
-        </form>
-    </div>
     <!-- Merch page -->
     <div class="merch-page">
         <div class="page-title">
@@ -260,6 +234,34 @@
             <p class="merch-button-text">MERCH STORE</p>
         </button>
     </div>
+    <!-- Sign Up Form -->
+    <div class="signup-form-container" id="signup-form">
+        <div class="close-form">
+            <i onclick="CloseSignUpForm()" class="fa-solid fa-x"></i>
+        </div>
+        <form>
+            <h1 class="sign-up-text">Sign Up To Receive The Latest Updates and Merch Releases</h1>
+            <div class="container">
+                <input type="text" placeholder="First Name" class="input">
+            </div>
+            <div class="container">
+                <input type="text" placeholder="Last Name" class="input">
+            </div>
+            <div class="container">
+                <input type="email" placeholder="Email Address"class="input">
+            </div>
+            <div class="container">
+                <input type="tel" placeholder="Mobile" class="input">
+            </div>
+            <div class="container">
+                <input type="checkbox">
+                <p class="checkbox-text"> I have read the <a href="#Terms-And-Conditions"class="terms-text">Terms And Conditions</a></p>
+            </div>
+            <div class="container">
+                <button onclick="CloseSignUpForm()"class="submit-form-button">SUBMIT</button>
+            </div>
+        </form>
+    </div>
     <!-- Footer Section-->
     <footer>
         <a href="/index.html">
@@ -271,7 +273,7 @@
         <div class="return-to-top-container">
             <button onclick="ScrollToTopFunction()" id="return-to-top-button" title="Return to top">Return To Top</button>
         </div>
-        <button onclick="OpenSignUpForm()"  class="footer-links">
+        <button onclick="OpenSignUpForm()" class="footer-links">
             <p class="links">Sign Up</p>
         </button>
         <button class="footer-links">

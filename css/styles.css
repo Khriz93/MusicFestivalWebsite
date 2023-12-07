@@ -21,7 +21,7 @@ body {
     flex-wrap: wrap;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
@@ -40,14 +40,17 @@ a:link {
 
 }
 .menu-column-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 25px auto;
+    margin-top: 55px;
+    margin-right: 25px;
+    line-height: 50px;
 }
 
 .menu-column {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     line-height: 90px;
 }
 
@@ -56,6 +59,13 @@ a:link {
     font-size: 30px;
     padding-top: 20px;
 }
+
+/* n is the parent then add 4 to select everything from the 4th child onward  */
+.mobile-menu a:nth-child(n+4), .mobile-menu a:nth-child(2) {
+    color: coral;
+    cursor: default;
+}
+
 
 .mobile-menu i {
     color: white;
@@ -70,6 +80,7 @@ a:link {
     position: absolute;
     z-index: 999;
     display: none;
+    margin-top: -370px;
 }
 
 .close-form i {
@@ -77,27 +88,23 @@ a:link {
     height: 10px;
     font-size: 24px;
     margin: 10px;
+    color: white;
+    cursor: pointer;
 }
 
 .sign-up-text {
     width: 70%;
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
     margin: 10px auto 60px;
     padding-top: 10px;
+    color: white;
 }
 
 .container {
     display: flex;
     justify-content: center;
     margin: 25px auto 10px;
-}
-
-.label-text {
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 65px;
 }
 
 .input {
@@ -108,6 +115,17 @@ a:link {
     font-size: 18px;
     font-weight: bold;
     margin-left: 20px;
+    color: white;
+}
+
+.terms-text {
+    cursor: pointer;
+    color: white;
+}
+
+.terms-text:hover {
+    text-decoration: none;
+    color: blue;
 }
 
 .submit-form-button {
@@ -116,8 +134,12 @@ a:link {
     font-size: 24px;
     font-weight: bold;
     color: #111;
-    background-color: rgba(rgba(28, 28, 255, 0.322));
+    margin-top: 25px;
     cursor: pointer;
+}
+
+.submit-form-button:hover {
+    background-color: lightblue;
 }
 
 .header {

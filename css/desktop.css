@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 1025px) {
     .header {
-        height: 1050px;
+        height: 1100px;
     }
 
     .logo h1 {
@@ -116,10 +116,11 @@
 
     .show-image-text-container {
         width: 250px;
+        margin-top: 80px;
     }
 
     .show-locations {
-        margin: auto -90px;
+        margin: 20px -90px;
     }
 
     .shows-img {
@@ -140,7 +141,7 @@
         width: 440px;
         height: 165px;
         font-size: 30px;
-        margin: 0 -50px;
+        margin: 0 -50px ;
     }
 
     .artists-page {
@@ -149,7 +150,7 @@
 
 
     .artist-image-text-container {
-        margin: 50px 100px 150px 80px;
+        margin: 80px 120px 150px 80px;
         padding: 10px;
 
     }
@@ -182,8 +183,13 @@
         height: 705px;
     }
 
+    .genre-column {
+        margin: auto;
+    }
+
     .dot-point {
         font-size: 36px;
+
     }
 
     .tickets {
@@ -246,6 +252,31 @@
         width: 380px;
         height: 85px;
         font-size: 80px;
+    }
+
+    .signup-form-container {
+        height: 550px;
+    }
+
+    .close-form i {
+        font-size: 32px;
+    }
+
+    .sign-up-text {
+        font-size: 34px;
+    }
+
+    .input {
+        width: 250px;
+        height: 20px
+    }
+
+    .checkbox-text {
+        font-size: 24px;
+    }
+
+    .submit-form-button {
+        width: 250px;
     }
 
     .footer-logo {
