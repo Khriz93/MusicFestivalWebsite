@@ -48,3 +48,9 @@ function CloseSignUpForm()
     signupForm.style.display = "none";
     body.style.overflowY = "scroll";
 }
+
+/*
+References
+scroll to top - https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
+                https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+*/

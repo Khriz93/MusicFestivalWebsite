@@ -8,7 +8,6 @@
         margin: auto;
         padding-right: 250px;
         justify-content: center;
-        /* align-items: center; */
     }
 
     .desktop-menu a {
@@ -18,11 +17,20 @@
         font-weight: bold;
         font-family: 'Lora', sans-serif;
         font-size: 24px;
+        transition: ease-out 100ms;
+    }
+
+    .desktop-menu a:hover {
+        transform: scale(1.1);
+        transition: ease-in 100ms;
+    }
+
+    .desktop-menu a:nth-child(n + 4), .desktop-menu a:nth-child(2) {
+        color: #FF6B00;
+        cursor: default;
+        transform: scale(1);
     }
 }
-
-/* ----------------------------------------------- */
-/* Landing Page Desktop */
 
 @media screen and (min-width: 1025px) {
     .tag-line {
@@ -36,6 +44,10 @@
 @media screen and (min-width: 1025px) {
     .header {
         height: 1100px;
+    }
+
+    .artist-page-title {
+        font-size: 130px;
     }
 
     .logo h1 {
@@ -114,7 +126,7 @@
         height: 255px;
     }
 
-    .overlay-text {
+    .overlay-text, .artist-overlay-text {
         top: 115%;
         left: 90%;
     }
@@ -280,8 +292,6 @@
         margin-top: 20px;
     }
 }
-
-/* ----------------------------------------------- */
 
 @media screen and (max-width: 950px) {
     .desktop-menu {
